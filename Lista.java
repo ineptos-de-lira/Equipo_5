@@ -44,4 +44,17 @@ class Lista {
       System.out.println("Numero de estudiante no valido");
     }
   }
+
+  void eliminarestudiante() {
+    System.out.println("Digite el numero del estudiante a eliminar");
+    int numero = sc.nextInt();
+    sc.nextLine();
+    numero--;
+    if (numero >= 0 && numero < estudiantes.size()) {
+      estudiantes.remove(numero);
+      System.out.println("Estudiante eliminado correctamente");
+    } else {
+      System.out.println("Numero de estudiante no valido");
+    }
+  }
 }
