@@ -9,10 +9,13 @@ class Lista {
     sc = new Scanner(System.in);
   }
 
-  void crearestudiante() {
-    System.out.println("Ingrese el nombre del estudiante");
-    String nombre = sc.nextLine();
-    String numero = String.valueOf(estudiantes.size() + 1);
-    Estudiante nuevoEstudiante = new Estudiante(numero, nombre);
-    estudiantes.add(nuevoEstudiante);
-  } 
+void crearestudiante() {
+  System.out.println("Ingrese el nombre del estudiante");
+  String nombre = sc.nextLine();
+  System.out.println("Ingrese la matricula del estudiante");
+  String matricula = sc.nextLine();
+  String numero = String.valueOf(estudiantes.size() + 1);
+  Estudiante nuevoEstudiante = new Estudiante(numero, nombre);
+  estudiantes.add(nuevoEstudiante);
+  System.out.println("Estudiante registrado exitosamente");
+} 
