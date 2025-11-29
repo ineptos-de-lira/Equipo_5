@@ -9,7 +9,17 @@ class Lista {
     sc = new Scanner(System.in);
   }
 
-    void mostrarPasedeLista() {
+void crearestudiante() {
+  System.out.println("Ingrese el nombre del estudiante");
+  String nombre = sc.nextLine();
+  System.out.println("Ingrese la matricula del estudiante");
+  String matricula = sc.nextLine();
+  String numero = String.valueOf(estudiantes.size() + 1);
+  Estudiante nuevoEstudiante = new Estudiante(numero, nombre);
+  estudiantes.add(nuevoEstudiante);
+  System.out.println("Estudiante registrado exitosamente");
+} 
+  void mostrarPasedeLista() {
     System.out.println("=============== Pase de Lista ===============");
     if (estudiantes.isEmpty()) {
       System.out.println("No hay estudiantes registrados");
@@ -18,4 +28,3 @@ class Lista {
         System.out.println(est.obtenerDatos());
       }
     }
-  }
