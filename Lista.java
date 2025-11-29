@@ -3,7 +3,7 @@ import java.util.Scanner;
 class Lista {
 	private ArrayList<Estudiante> estudiantes;
   private Scanner sc;
-}
+
   Lista() {
     estudiantes = new ArrayList<Estudiante>();
     sc = new Scanner(System.in);
@@ -28,3 +28,18 @@ void crearestudiante() {
         System.out.println(est.obtenerDatos());
       }
     }
+  }
+
+  void actualizarEstado() {
+    System.out.println("Digite el numero del estudiante a marcar");
+    int numero = sc.nextInt();
+    sc.nextLine();
+    numero--;
+    if (numero >= 0 && numero < estudiantes.size()) {
+      estudiantes.get(numero).marcarAsistencia();
+      System.out.println("Asistencia registrada correctamente");
+    } else {
+      System.out.println("Numero de estudiante no valido");
+    }
+  }
+}
