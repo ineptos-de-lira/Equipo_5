@@ -8,4 +8,8 @@ public class Estudiante {
  this.nombre = nombre;
     this.asistencia = "Ausente";
   }
+
+  String obtenerDatos() {
+ numero + ". | " + nombre + " | " + asistencia;
+  }
 }
