@@ -29,4 +29,13 @@ void crearestudiante() {
       }
     }
   }
-}
+
+  void actualizarEstado() {
+    System.out.println("Ingrese el numero del estudiante a marcar");
+    int numero = sc.nextInt();
+    sc.nextLine();
+    numero--;
+    estudiantes.get(numero).marcarAsistencia();
+    System.out.println("Asistencia registrada correctamente");
+    }
+  }
