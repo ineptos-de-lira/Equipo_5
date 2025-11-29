@@ -11,7 +11,11 @@ class Lista {
 
     void mostrarPasedeLista() {
     System.out.println("=============== Pase de Lista ===============");
+    if (estudiantes.isEmpty()) {
+      System.out.println("No hay estudiantes registrados");
+    } else {
       for (Estudiante est : estudiantes) {
         System.out.println(est.obtenerDatos());
       }
     }
+  }
