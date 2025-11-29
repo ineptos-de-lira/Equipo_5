@@ -8,3 +8,11 @@ class Lista {
     estudiantes = new ArrayList<Estudiante>();
     sc = new Scanner(System.in);
   }
+
+  void crearestudiante() {
+    System.out.println("Ingrese el nombre del estudiante");
+    String nombre = sc.nextLine();
+    String numero = String.valueOf(estudiantes.size() + 1);
+    Estudiante nuevoEstudiante = new Estudiante(numero, nombre);
+    estudiantes.add(nuevoEstudiante);
+  } 
