@@ -20,4 +20,8 @@ public class Estudiante {
         asistencia = "Ausente";
     }
   }
+
+  void getAsistencia() {
+    return asistencia;
+  }
 }
