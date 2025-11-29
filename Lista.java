@@ -31,11 +31,15 @@ void crearestudiante() {
   }
 
   void actualizarEstado() {
-    System.out.println("Ingrese el numero del estudiante a marcar");
+    System.out.println("Digite el numero del estudiante a marcar");
     int numero = sc.nextInt();
     sc.nextLine();
     numero--;
-    estudiantes.get(numero).marcarAsistencia();
-    System.out.println("Asistencia registrada correctamente");
+    if (numero >= 0 && numero < estudiantes.size()) {
+      estudiantes.get(numero).marcarAsistencia();
+      System.out.println("Asistencia registrada correctamente");
+    } else {
+      System.out.println("Numero de estudiante no valido");
     }
   }
+}
