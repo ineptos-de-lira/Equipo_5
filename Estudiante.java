@@ -12,4 +12,12 @@ public class Estudiante {
   String obtenerDatos() {
  numero + ". | " + nombre + " | " + asistencia;
   }
+
+    void marcarAsistencia() {
+    if (asistencia.equals("Ausente")) {
+      asistencia = "Presente";
+    else {
+        asistencia = "Ausente";
+    }
+  }
 }
