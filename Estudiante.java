@@ -18,5 +18,9 @@ return numeo + ". | " + nombre + " | " + asistencia;
     }else{
       asistencia = "Ausente";}
   }
+
+  String getAsistencia() {
+    eturn asistencia;
+  }
   }
 }
