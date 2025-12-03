@@ -7,14 +7,14 @@ public class Estudiante {
   private String nombre;
   private String asistencia;
 
-  Estudiante(String numeo, String nobre) {
+  Estudiante(String numero, String nombre) {
     this.numero = numero;
     this.nombre = nombre;
     this.asistencia = "Ausente";
   }
 
   String obtenerDatos() {
-    return numeo + ". | " + nombre + " | " + asistencia;
+    return numero + ". | " + nombre + " | " + asistencia;
   }
 
   void marcarAsistencia() {
