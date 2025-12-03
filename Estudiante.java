@@ -8,4 +8,8 @@ private String asistencia;
     this.nombre = nombre;
       this.asistencia = "Ausente";
   }
+
+  Sring obtenerDatos() {
+return numeo + ". | " + nombre + " | " + asistencia;
+  }
 }
