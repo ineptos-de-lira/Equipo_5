@@ -33,5 +33,4 @@ class Lista {
       System.out.println("Numero de estudiante no valido");
     }
   }
-  }
 }
