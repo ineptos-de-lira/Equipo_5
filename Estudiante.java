@@ -1,26 +1,31 @@
-public class Estudiante {
-    private String numero;
-     private String nombre;
-private String asistencia;
+/**
+ * Aqui se crea la clase de estudiante y sus metodos.
+ */
 
-   Estudiante(String numeo, String nobre) {
- this.numero = numero;
+public class Estudiante {
+  private String numero;
+  private String nombre;
+  private String asistencia;
+
+  Estudiante(String numeo, String nobre) {
+    this.numero = numero;
     this.nombre = nombre;
-      this.asistencia = "Ausente";
+    this.asistencia = "Ausente";
   }
 
-  Sring obtenerDatos() {
-return numeo + ". | " + nombre + " | " + asistencia;
+  String obtenerDatos() {
+    return numeo + ". | " + nombre + " | " + asistencia;
+  }
 
-    int marcarAsistencia() {
+  void marcarAsistencia() {
     if (asistencia.equals("Ausente")) {
-        asistencia = "Presente";
-    }else{
-      asistencia = "Ausente";}
+      asistencia = "Presente";
+    } else {
+      asistencia = "Ausente";
+    }
   }
 
   String getAsistencia() {
-    eturn asistencia;
-  }
+    return asistencia;
   }
 }
