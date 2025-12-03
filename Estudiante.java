@@ -11,5 +11,12 @@ private String asistencia;
 
   Sring obtenerDatos() {
 return numeo + ". | " + nombre + " | " + asistencia;
+
+    int marcarAsistencia() {
+    if (asistencia.equals("Ausente")) {
+        asistencia = "Presente";
+    }else{
+      asistencia = "Ausente";}
+  }
   }
 }
