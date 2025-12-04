@@ -57,4 +57,30 @@ class Lista {
       System.out.println("Numero de estudiante no valido");
     }
   }
+
+  // Metodos para pruebas unitarias
+  void agregarEstudiante(Estudiante est) {
+    estudiantes.add(est);
+  }
+
+  int obtenerCantidadEstudiantes() {
+    return estudiantes.size();
+  }
+
+  Estudiante obtenerEstudiante(int indice) {
+    if (indice >= 0 && indice < estudiantes.size()) {
+      return estudiantes.get(indice);
+    }
+    return null;
+  }
+
+  void eliminarEstudiantePorIndice(int indice) {
+    if (indice >= 0 && indice < estudiantes.size()) {
+      estudiantes.remove(indice);
+    }
+  }
+
+  boolean estaVacia() {
+    return estudiantes.isEmpty();
+  }
 }
