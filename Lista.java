@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class Lista {
-
   private ArrayList<Estudiante> estudiantes;
   private Scanner sc;
 
@@ -33,6 +32,19 @@ class Lista {
     System.out.println("Estudiante registrado exitosamente");
   }
 
+  void actualizarEstado() {
+    System.out.println("Digite el numero del estudiante a marcar");
+    int numero = sc.nextInt();
+    sc.nextLine();
+    numero--;
+    if (numero >= 0 && numero < estudiantes.size()) {
+      estudiantes.get(numero).marcarAsistencia();
+      System.out.println("Asistencia registrada correctamente");
+    } else {
+      System.out.println("Numero de estudiante no valido");
+    }
+  }
+
   void eliminarestudiante() {
     System.out.println("Digite el numero del estudiante a eliminar");
     int numero = sc.nextInt();
@@ -46,4 +58,3 @@ class Lista {
     }
   }
 }
-
